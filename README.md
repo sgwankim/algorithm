@@ -6,13 +6,13 @@ import java.util.*;
 class Solution {
     public long solution(int n, int[] times) {
         Arrays.sort(times);
-		long low = times[0];
+	long low = times[0];
         long high = low * n;
 
-        return recurSearch(n,times,low,high,0);
-	}
+        return recursiveSearch(n,times,low,high,0);
+    }
 
-    private long recurSearch(int n,int[] times,long low,long high,long answer){
+    private long recursiveSearch(int n,int[] times,long low,long high,long answer){
         long count = 0;
         long mid = (low+high)/2;
 
@@ -26,9 +26,9 @@ class Solution {
 
         if(low == mid) return answer;  
         else if(count >= n){
-            return recurSearch(n,times,low,mid,answer);
+            return recursiveSearch(n,times,low,mid,answer);
         }else{
-            return recurSearch(n,times,mid,high,answer);
+            return recursiveSearch(n,times,mid,high,answer);
         }
     }
 }
