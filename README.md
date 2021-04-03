@@ -1,5 +1,5 @@
-### 알고리즘*
+### 알고리즘
 
 ```javascript
-const sayHi() : string => { return "Hi" };
+const sayHi = () : string => { return "grow than yesterday" };
 ```
