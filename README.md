@@ -1,5 +1,5 @@
 ### 알고리즘
 
 ```javascript
-const sayHi = () : string => { return "grow than yesterday" };
+const sayHi = () : string => { return "It grows better and better" };
 ```
